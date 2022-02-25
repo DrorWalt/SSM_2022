@@ -498,7 +498,7 @@ category_labels<-c("Individual Freedom", "Elite Conspiracies", "Non-White Conspi
 ggplot(handcat_perc_rank, aes(reorder(category, -perc), perc))+
   geom_col()+ theme_bw()+ 
   ggtitle("Share of Content Categories in Manually Coded Content")+
-  labs(x = "Content Ctegories", 
+  labs(x = "Content Categories", 
        y = "Share of Posts")+
   theme(axis.text.x = element_text(angle=90, vjust=0.1, hjust=0,size=10))+
   theme(plot.title = element_text(hjust = 0.5))+
@@ -596,7 +596,7 @@ theme_month<-ggplot(data_long,aes(x=dateMONTH))+
   theme_bw()+
   theme(axis.text.x = element_text(angle=90, vjust=0.2, hjust=0,size=10))+
   theme(legend.position="none")+
-  ggtitle("Themes in Stronmfront Vaccine-Related Discussions (Per Month)")+
+  ggtitle("Themes in Stormfront Vaccine-Related Discussions (Per Month)")+
   theme(plot.title = element_text(hjust = 0.5))+
   #labs(fill = "THEMES: ")+
   #scale_x_continuous(breaks = NULL)+
@@ -623,7 +623,7 @@ theme_year<-ggplot(TEMP,aes(x=dateYEAR))+
   theme_bw()+
   theme(axis.text.x = element_text(angle=90, vjust=0.2, hjust=0,size=10))+
   theme(legend.position="none")+
-  ggtitle("Themes in Stronmfront Vaccine-Related Discussions (Per Year)")+
+  ggtitle("Themes in Stormfront Vaccine-Related Discussions (Per Year)")+
   theme(plot.title = element_text(hjust = 0.5))+
   #labs(fill = "THEMES: ")+
   #scale_x_continuous(breaks = NULL)+
